@@ -1,0 +1,66 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+  /*header*/
+  .header__block{
+    @include container();
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__nav{
+    @include flex();
+  }
+  .header__navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 86px;
+  }
+  .header__mailTel{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 30px;
+  }
+  .header_logo{
+    @include flex();
+    justify-content: start;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  .header_logo-span{
+    color: #2196F3;
+    margin-right: 5px;
+  }
+  .navigation_btn{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
+  .navigation_btn:hover,
+  .navigation_btn:focus{
+    color: var(--primary-hover_focus-color);
+  }
+  .header_contacts{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+  .header_contacts:hover,
+  .header_contacts:focus{
+    color: var(--primary-hover_focus-color);
+  }
+  /*header*/
