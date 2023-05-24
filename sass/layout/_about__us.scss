@@ -1,0 +1,29 @@
+.hero-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 50px 150px 50px 150px;
+    .hero-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center;
+    }
+}
+
+.hero-description {
+    .hero-description__title {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 1.4;
+        color: $primary__text--color;
+    }
+    .hero-description__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+        color: $primary__text--color;
+    }
+}

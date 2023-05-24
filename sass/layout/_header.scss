@@ -2,17 +2,49 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 .header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $autor__border--color;
+  height: 80px;
   .header__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    margin-left: 60px;
 
     .logo__color-top {
-
+      color:$logo__color-top;
     }
     .logo__color-bottom {
-
+      color:$logo__color-bottom;
     }
   }
 }
+
 .header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-right: 60px;
   .menu__item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height:1.3;
+
+    color: $primary__nav--color;
+  }
+  li.is-active>.menu__item{
+    color: $is-active__color;
+    }
   }
 }

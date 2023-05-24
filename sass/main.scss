@@ -12,7 +12,10 @@
   'base/fonts';
 // 4. Layout-related sections
 @import
+  'layout/container',
   'layout/header',
+  'layout/latest__news',
+  'layout/about__us',
   'layout/footer';
 
 // 5. Components
